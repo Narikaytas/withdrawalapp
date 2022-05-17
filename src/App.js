@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import {Component} from 'react'  
+import Banking from './components/cashwithdrawal'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component{
+  
+  
+  render() {
+    return(
+      <>
+         <div className='withdrawlForm col-12 col-sm-6 m-auto mt-5 p-3'>
+           <h1>Narik Bank</h1>
+           <section className='bankDetails'>
+             
+           <h3><span>V</span>Vogeti Satya Kiran</h3>
+             <p>A/C: 000-000-XXXX-XXXX-XXXX</p>
+           </section>
+           <Banking/>
+         </div>  
+      </>
+    )
+  }
 }
-
-export default App;
+export default App
